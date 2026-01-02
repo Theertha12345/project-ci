@@ -69,7 +69,7 @@ pipeline {
         stage('Deploy on EC2') {
             steps {
                 withCredentials([sshUserPrivateKey(
-                        credentialsId: 'ec2-ssh',
+                        credentialsId: 'tomcat-ssh',
                         keyFileVariable: 'SSH_KEY',
                         usernameVariable: 'SSH_USER'
                 )]) {
