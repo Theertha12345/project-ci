@@ -2,11 +2,11 @@ pipeline {
     agent any
 
     environment {
-        SONAR_HOST_URL = "http://<SONAR_PRIVATE_IP>:9000"
-        NEXUS_DOCKER_REGISTRY = "<NEXUS_PRIVATE_IP>:8083"
+        SONAR_HOST_URL = "http://172.31.11.246:9000"
+        NEXUS_DOCKER_REGISTRY = "172.31.3.63:8083"
         IMAGE_NAME = "devops-demo"
         IMAGE_TAG = "latest"
-        EC2_HOST = "<EC2_PRIVATE_IP>"
+        EC2_HOST = "172.31.8.183"
     }
 
     stages {
