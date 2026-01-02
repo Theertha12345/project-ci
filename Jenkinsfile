@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        NEXUS_DOCKER_REGISTRY = "172.31.3.63:8083"
+        NEXUS_DOCKER_REGISTRY = "172.31.3.63:8081"
         IMAGE_NAME = "devops-demo"
         IMAGE_TAG = "latest"
         EC2_HOST = "172.31.8.183"
