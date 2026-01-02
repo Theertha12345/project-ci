@@ -13,8 +13,8 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/<your-username>/devops-demo-app.git'
+                git branch: 'master',
+                    url: 'https://github.com/Theertha12345/project-ci.git'
             }
         }
 
