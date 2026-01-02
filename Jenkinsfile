@@ -21,7 +21,8 @@ pipeline {
             steps {
                 withSonarQubeEnv('sonarqube') {
                     sh """
-                    mvn clean verify sonar:sonar \
+                    mvn clean verify \
+                    org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
                     -Dsonar.projectKey=devops-demo
                     """
                 }
@@ -85,4 +86,3 @@ pipeline {
         }
     }
 }
-
